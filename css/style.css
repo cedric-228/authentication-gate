@@ -1,0 +1,124 @@
+a {
+    color: #0b6818;
+    text-decoration: none;
+}
+
+.auth-cover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+button{
+    cursor: pointer;
+    background-color: #0f7918;
+    color: #FFF;
+    border: 1px solid transparent !important;
+    outline: none;
+    margin: 0 !important;
+}
+
+button:hover {
+    outline: 3px solid #0f7918;
+    outline-offset: 1px;
+}
+
+.d-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.form-cover {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-cover .logo-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-cover form {
+    width: 250px;
+    border: 1px solid #CCC;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: roboto-regular;
+}
+
+input, button {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    height: 35px;
+    padding: 0 10px;
+    border: 1px solid #CCC;
+    outline: none;
+    border-radius: 7px;
+}
+
+.input:hover {
+    outline:3px solid #0f7918;
+    outline-offset: 1px;
+}
+
+.middle-banner {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.middle-banner h2 {
+    font-size: 38px;
+}
+
+.mask {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    text-align: center;
+    color: #FFF;
+}
+
+.mask>div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.mask>div>div {
+    padding: 30px;
+}
+
+.primary-text {
+    color: #fc891d;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #FFF;
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
