@@ -1,4 +1,18 @@
-import { User } from '../types/user';
+// Interface User définie localement
+interface User {
+  id: string;
+  email: string;
+  name: string;
+  role: 'youth' | 'project-owner';
+  photo?: string;
+  bio?: string;
+  location?: string;
+  badges: string[];
+  completedMissions: number;
+  skills: string[];
+  phone?: string;
+  whatsapp?: string;
+}
 
 export interface Badge {
   id: string;
@@ -122,7 +136,7 @@ class BadgeService {
     }
   ];
 
-  public getUserBadges(userId: string): Promise<Badge[]> {
+  public getUserBadges(_userId: string): Promise<Badge[]> {
     // Simuler un appel API
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -139,7 +153,7 @@ class BadgeService {
     });
   }
 
-  public getUserCertificates(userId: string): Promise<Certificate[]> {
+  public getUserCertificates(_userId: string): Promise<Certificate[]> {
     // Simuler un appel API
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -152,7 +166,7 @@ class BadgeService {
     });
   }
 
-  public generateCertificate(userId: string, badgeIds: string[]): Promise<Certificate> {
+  public generateCertificate(_userId: string, badgeIds: string[]): Promise<Certificate> {
     // Simuler un appel API pour générer un certificat basé sur les badges obtenus
     return new Promise((resolve) => {
       setTimeout(() => {
