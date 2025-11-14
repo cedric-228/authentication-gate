@@ -1,5 +1,4 @@
 
-
 export enum RoleEnums {
   SYSTEME_ADMIN = "Administrateur du système",
   ADMIN = "Administrateur",
@@ -14,5 +13,6 @@ export type user = {
     phone: string,
     role: RoleEnums,
     success: boolean,
+    message: string,
 }
 
